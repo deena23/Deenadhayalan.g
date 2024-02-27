@@ -1,0 +1,64 @@
+.main-container{
+    width: 100vw;
+    padding: 3rem;
+    background-color: #131313;
+    transition: all .2s;
+    header{
+        position: sticky;
+        top: 3rem;
+        display: grid;
+        place-items: center;
+        nav{
+            padding: 0.6rem 0.6rem;
+            border-radius: 25px;
+            transition: all .2s linear;
+            ul{
+                list-style: none;
+                display: flex;
+                gap: 1rem;
+                li{
+                    cursor: pointer;
+                    padding: 0.5rem 1rem;
+                    &:hover{
+                        color: var(--heading-clr);
+                    }
+                }
+            }
+        }
+    }
+    .home-container{
+        height: 80vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+    .experience-container{
+        .experince{
+            display: flex;
+            gap: 2rem;
+            ul{
+                list-style: none;
+            }
+            .tech-stacks{
+                display: flex; 
+                gap: 1rem;
+                p{
+                    border: 1px solid var(--heading-clr);
+                    padding: 0 10px;
+                    cursor: default;
+                }
+            }
+        }
+    }
+}
+.glassmorphism{
+    background: rgba( 152, 142, 142, 0.25 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+}
+.active{
+    background: rgba( 152, 142, 142, 0.25 );
+    border-radius: 20px;
+    color: var(--heading-clr);
+}

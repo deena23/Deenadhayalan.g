@@ -1,0 +1,89 @@
+<section class="main-container">
+    <header>
+        <nav>
+            <ul>
+                <li (click)="scrollTo(home, homemenu)" #homemenu class="active">Home</li>
+                <li (click)="scrollTo(about, aboutmenu)" #aboutmenu>About</li>
+                <li (click)="scrollTo(experience, experiencemenu)" #experiencemenu>Experience</li>
+                <li>Project</li>
+                <li>Resume</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="home-container" #home>
+        <div class="content-wrapper">
+            <p class="heading">Hello. I'm Deena. </p> 
+            <p> Frontend Developer </p>
+            <p>Dedicated Frontend Developer Crafting Seamless User Experiences with Passionate Precision.</p>
+        </div>
+    </div>
+
+
+    <div #about>
+        <p class="heading">About</p>
+        <br>
+        <p>
+            I'm a 23 year old developer living in India. With over 2.5 years of dedicated experience in the dynamic realm of full-stack development, 
+            I bring a robust skill set and a passion for crafting innovative solutions. My expertise spans 
+            a wide array of technologies, with a focus on Angular, JavaScript, TypeScript, .NET Core Web API, 
+            SQL Server, and RxJs. As a seasoned professional, I have successfully navigated the intricacies of full-stack development, 
+            consistently delivering high-quality software solutions. My proficiency in Angular allows me to create engaging and 
+            responsive user interfaces, while my mastery of JavaScript and TypeScript ensures efficient and scalable 
+            front-end development.
+        </p>
+    </div>
+    <br><br>
+    <div #experience class="experience-container">
+        <p class="heading">Experince</p>
+        <br>
+        <div class="experince one">
+            <p class="heading">Aug 2023 - Jan 2024</p>
+            <div>
+                <p class="heading">BNY Mellon - Senior Backend Developer</p>
+                <ul>
+                    <li>Worked on SonarQube and Veracode vulnerabilities to improve security and code quality.</li>
+                    <li>Resolved vulnerability issues like SQL Injection in 3 out of 5 pages.</li>
+                    <li>Developed UI components using Angular and Material.</li>
+                    <li>Implemented complex asynchronous call using RxJS library</li>
+                </ul>
+                <br>
+                <div class="tech-stacks">
+                    <p>Angular</p>
+                    <p>JavaScript</p>
+                    <p>TypeScript</p>
+                    <p>RxJs</p>
+                    <p>.NET Core</p>
+                    <p>SQL Server</p>
+                    <p>Git</p>
+                    <p>Jira</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="experince one">
+            <p class="heading">Sep 2021 - Aug 2023</p>
+            <div>
+                <p class="heading">GAVS Technologies - Frontend Developer</p>
+                <ul>
+                    <li>Developed UI components using Angular and Material for complex applications.</li>
+                    <li>Implemented complex asynchronous call using RxJS library.</li>
+                    <li>Added REST API services using .NET Core and SQL Server Database for retrieving/Update/Insert data.</li>
+                    <li>Worked with a business analyst team to gather requirements and build a bug free application.</li>
+                    <li>Implemented CI/CD pipeline in Azure devops for better build and deployment.</li>
+                    <li>Implemented authentication and authorization in Angular applications using JWT, Interceptor, Guard.</li>
+                </ul>
+                <br>
+                <div class="tech-stacks">
+                    <p>Angular</p>
+                    <p>JavaScript</p>
+                    <p>TypeScript</p>
+                    <p>RxJs</p>
+                    <p>.NET Core</p>
+                    <p>SQL Server</p>
+                    <p>Git</p>
+                    <p>Jira</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
